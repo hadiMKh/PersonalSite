@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+
+
+
+
+
+/*
+ *  STYLE 1
+ */
+
+#style-1::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+    background-color: #38cd83;
+}
+
+
+
+#imageee {
+    padding: 10% 10%;
+    width: 100%;
+    height: 70%;
+    margin-top: 25%;
+    margin-left: -5%;
+}
+
+
+/* Style the top navigation bar */
+.scrollbar
+{
+    margin-left: 30px;
+    float: left;
+    height: 200px;
+    width: 30px;
+    background: #38cd83 ;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+.texti
+{
+    background-color: #fbfbfb;
+    width: 100%;
+    padding: 8px 16px;
+
+}
+.vl {
+    border-left: 3px solid lightgray;
+    height: 95%;
+}
+.navbar {
+    display: flex;
+    flex: 43%;
+    background-color: white;
+    height: 5%;
+    margin-left: 27%;
+    font-size: 65%;
+;
+
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Change color on hover */
+
+.active {
+    color: white;
+    background-color: #31d181;
+}
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-image: linear-gradient(to right, #1bcaa1 , #38cd83);
+    padding: 20px;
+    height: 5%;
+
+}
+.side1 {
+    flex: 30%;
+    background-color: #f1f1f1;
+
+}
+
+/* Main column */
+.main {
+    flex: 80%;
+    background-color: white;
+
+}
+
+/* Fake image, just for this example */
+.fakeimg1 {
+    background-color: #aaa;
+    width: 80%;
+    padding: 20px;
+}
+
+.fakeimg2 {
+    background-color: #aaa;
+    width: 80%;
+    padding: 20px;
+
+
+}
+.fakeimg3 {
+    background-color: #aaa;
+    width: 80%;
+    padding: 20px;
+    margin-left: -145%;
+    margin-top: 10%;
+}
+.fakeimg4 {
+    background-color: white;
+    width: 80%;
+    padding: 20px;
+
+}
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+.sidep {
+    flex: 7%;
+}
+.sidep2:hover{
+    box-shadow:2px 2px 8px 8px lightsteelblue;
+
+}
+.sidep2 {
+    flex: 42%;
+
+
+}
+.sidepE {
+    flex: 49%;
+
+
+}
+
+
+.label{
+    font-size: x-small
+}
+.range {
+    width: 100%;
+    color: #38cd83 ;
+}
+.labelR{
+    margin-left:2px;
+    float: right
+}
+.labelV{
+    float: right
+}
+
+.sideep{
+flex: 50%;
+
+}
+.sideep2{
+flex: 50%;
+
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    border:  2px solid gray;
+    border-radius: 50% ;
+    display: inline-block;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: absolute;
+
+
+}
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #31d181;
+    z-index: 2;
+}
+
+.button1:hover {
+    background-color: #31d181;
+    color: white;
+}
+.flex-container2 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-container2 > div {
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+    height: 150px;
+    background-color: white;
+
+}
+.flex-container2 a{
+    margin-top: 50%;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+}
